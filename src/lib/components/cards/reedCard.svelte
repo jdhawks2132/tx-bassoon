@@ -11,7 +11,7 @@
 	};
 </script>
 
-<div class="flex flex-col w-1/3 justify-evenly bg-white rounded-md shadow-sm h-3/4 m-3 ">
+<div class="flex flex-col w-11/12 lg:sw-1/3 justify-evenly bg-white rounded-md shadow-sm h-3/4 m-3 ">
 	<h4 class="text-2xl font-bold text-center text-gray-800 my-4">
 		{reed.name}
 	</h4>
