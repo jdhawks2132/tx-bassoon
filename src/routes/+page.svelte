@@ -3,6 +3,15 @@
 	import Hero from '../assets/images/bassoon_hero.jpg';
 </script>
 
+<!-- add meta data like title svelte -->
+<svelte:head>
+	<title>Texas Bassoon Center</title>
+	<meta name="description" content="Bassoon specialists located in Dallas, Texas." />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#ffffff" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
+</svelte:head>
+
 <section>
 	<div class="flex flex-col items-center justify-center h-screen">
 		<!-- Hero section using flex for mobile responsiveness  -->
