@@ -40,7 +40,7 @@
 			: 'hidden'}"
 	>
 		<a class="text-white text-xl hover:font-black" href="/#bassoons">Bassoons</a>
-		<a class="text-white text-xl hover:font-black" href="/#reeeds">Reeds</a>
+		<a class="text-white text-xl hover:font-black" href="/#reeds">Reeds</a>
 		<a class="text-white text-xl hover:font-black" href="/#about">About</a>
 		<a class="text-white text-xl hover:font-black" href="/#contact">Contact</a>
 	</div>

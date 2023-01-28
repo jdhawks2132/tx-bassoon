@@ -4,6 +4,7 @@
 	import ReedCard from '$lib/components/cards/reedCard.svelte';
 	import BassoonStore from '../stores/BassoonStore';
 	import ReedStore from '../stores/ReedStore';
+	import HeadShot from '$lib/assets/images/headshot.jpg';
 
 	let bassoons: {
 		id: string;
@@ -77,7 +78,7 @@
 </section>
 
 <section id="bassoons" class="h-full">
-	<h2 class="text-6xl my-4 font-bold text-center">Bassoons</h2>
+	<h2 class="text-6xl my-20 font-bold text-center">Bassoons</h2>
 	<div class="flex flex-col lg:flex-row items-center justify-center">
 		{#each bassoons as bassoon}
 			<BassoonCard {bassoon} />
@@ -86,7 +87,7 @@
 </section>
 
 <section id="reeds" class="my-20 h-full">
-	<h2 class="text-6xl my-4 font-bold text-center">Reeds</h2>
+	<h2 class="text-6xl my-20 font-bold text-center  ">Reeds</h2>
 	<div class="flex flex-col lg:flex-row items-center justify-center">
 		{#each reeds as reed}
 			<ReedCard {reed} />
@@ -95,13 +96,32 @@
 </section>
 
 <section id="about" class="my-20 h-full">
-	<div class="flex flex-col lg:flex-row items-center justify-center ">
-		<h2 class="text-6xl font-bold text-center">About</h2>
+	<h2 class="text-6xl font-bold text-center my-20">About</h2>
+	<div
+		class="flex flex-col w-11/12 lg:w-2/3 mx-auto py-8 divide-y lg:flex-row lg:divide-y-0 lg:divide-x items-center justify-center bg-white rounded-md shadow-md"
+	>
+		<!-- create a contact card using tailwind css keeping mobile responsiveness in mind -->
+		<div class="flex flex-col items-center justify-center w-9/12 lg:w-1/2">
+			<img src={HeadShot} alt="bassoon" class="w-2/3 my-4 rounded-full border-primary border-4" />
+		</div>
+		<div class="flex flex-col p-4 items-center justify-center w-11/12 lg:w-1/2">
+			<h3 class="text-2xl">FirstName LastName</h3>
+			<p class="text-xl text-gray-500 my-4">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur commodi eos totam
+				porro! In vitae cum eos quasi. Cupiditate ipsa, similique beatae nam possimus ex. Dolorem
+				maxime aut quae nihil.
+			</p>
+
+			<p class="text-xl text-gray-500 my-4">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur commodi eos totam
+				porro! In vitae cum eos quasi. Cupiditate ipsa, similique beatae nam possimus ex. Dolorem
+				maxime aut quae nihil.
+			</p>
+		</div>
 	</div>
 </section>
 
 <section id="contact" class="mt-20 h-full">
-	<div class="flex flex-col lg:flex-row items-center justify-center">
-		<h2 class="text-6xl font-bold text-center">Contact</h2>
-	</div>
+	<h2 class="text-6xl font-bold text-center my-20">Contact</h2>
+	<div class="flex flex-col lg:flex-row items-center justify-center" />
 </section>
