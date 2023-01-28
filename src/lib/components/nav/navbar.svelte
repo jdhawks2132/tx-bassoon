@@ -10,10 +10,10 @@
 			</button>
 		</div>
 		<div class="hidden lg:block">
-			<a href="#" class="text-white mr-4">Bassoons</a>
-			<a href="#" class="text-white mr-4">Reeds</a>
-			<a href="#" class="text-white mr-4">About</a>
-			<a href="#" class="text-white ">Contact</a>
+			<a href="#bassoons" class="text-white mr-4">Bassoons</a>
+			<a href="#reeds" class="text-white mr-4">Reeds</a>
+			<a href="#about" class="text-white mr-4">About</a>
+			<a href="#contact" class="text-white ">Contact</a>
 		</div>
 	</div>
 </nav>
