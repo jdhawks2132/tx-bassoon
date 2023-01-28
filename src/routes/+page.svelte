@@ -26,7 +26,7 @@
 	<link rel="icon" type="image/png" href="/favicon.png" />
 </svelte:head>
 
-<section class="h-screen">
+<section class="h-112 lg:h-screen">
 	<div class="flex flex-col items-center justify-center h-full">
 		<div
 			class="flex flex-col lg:flex-row items-center justify-center md:justify-between w-11/12 mx-auto"

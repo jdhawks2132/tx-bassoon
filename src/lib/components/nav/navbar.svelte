@@ -1,21 +1,47 @@
-<!-- make the navbar sticky -->
+<script>
+	import Logo from '$lib/assets/images/Logo.png';
+	let showMenu = false;
 
-<nav class="bg-primary sticky top-0 z-50">
-	<div class="container mx-auto px-6 py-4 flex items-center justify-between">
-		<a href="/" class="text-white text-xl">Texas Bassoon Center</a>
-		<div class="block lg:hidden">
-			<button class="flex items-center px-3 py-2 text-white border-2 border-white rounded-md">
-				<svg class="w-3 h-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-					<title>Menu</title>
-					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+	function toggleNavbar() {
+		showMenu = !showMenu;
+	}
+</script>
+
+<nav class=" bg-primary p-8 mx-auto md:flex md:justify-between md:items-center sticky top-0 z-50">
+	<div class="flex items-center justify-between">
+		<a class="text-xl font-bold text-white lg:text-3xl  " href="/">Texas Bassoon Center </a>
+		<!-- Mobile menu button -->
+		<div on:click={toggleNavbar} class="flex md:hidden" on:keyup={toggleNavbar}>
+			<button
+				type="button"
+				class="text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+					/>
 				</svg>
 			</button>
 		</div>
-		<div class="hidden lg:block">
-			<a href="/#bassoons" class="text-white mr-4">Bassoons</a>
-			<a href="/#reeds" class="text-white mr-4">Reeds</a>
-			<a href="/#about" class="text-white mr-4">About</a>
-			<a href="/#contact" class="text-white ">Contact</a>
-		</div>
+	</div>
+
+	<div
+		class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 items-end {showMenu
+			? 'flex'
+			: 'hidden'}"
+	>
+		<a class="text-white text-xl hover:font-black" href="/#bassoons">Bassoons</a>
+		<a class="text-white text-xl hover:font-black" href="/#reeeds">Reeds</a>
+		<a class="text-white text-xl hover:font-black" href="/#about">About</a>
+		<a class="text-white text-xl hover:font-black" href="/#contact">Contact</a>
 	</div>
 </nav>
