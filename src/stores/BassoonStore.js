@@ -7,7 +7,13 @@ const BassoonStore = writable([
 		image:
 			'https://github.com/jdhawks2132/tx-bassoon/blob/main/src/lib/assets/images/bassoon.jpg?raw=true',
 		price: 'Call for price',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+		features: [
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+		]
 	},
 	{
 		id: '215',
@@ -15,7 +21,13 @@ const BassoonStore = writable([
 		image:
 			'https://github.com/jdhawks2132/tx-bassoon/blob/main/src/lib/assets/images/bassoon.jpg?raw=true',
 		price: 'Call for price',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+		features: [
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+		]
 	},
 	{
 		id: '216',
@@ -23,7 +35,13 @@ const BassoonStore = writable([
 		image:
 			'https://github.com/jdhawks2132/tx-bassoon/blob/main/src/lib/assets/images/bassoon.jpg?raw=true',
 		price: 'Call for price',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+		features: [
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+		]
 	},
 	{
 		id: '217',
@@ -31,7 +49,13 @@ const BassoonStore = writable([
 		image:
 			'https://github.com/jdhawks2132/tx-bassoon/blob/main/src/lib/assets/images/bassoon.jpg?raw=true',
 		price: 'Call for price',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+		features: [
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+		]
 	}
 ]);
 

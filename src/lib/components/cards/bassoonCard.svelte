@@ -10,7 +10,9 @@
 </script>
 
 <a href={`/bassoons/${bassoon.id}`}>
-	<div class="flex flex-col justify-evenly bg-white rounded-md shadow-sm h-3/4 m-3 hover:scale-105">
+	<div
+		class="flex flex-col justify-evenly bg-white rounded-md shadow-sm h-3/4 m-3 lg:hover:scale-105"
+	>
 		<h4 class="text-2xl font-bold text-center text-gray-800 my-4">
 			{bassoon.name}
 		</h4>

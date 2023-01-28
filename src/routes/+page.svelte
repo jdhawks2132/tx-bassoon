@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { slide, fade } from 'svelte/transition';
 	import Hero from '$lib/assets/images/bassoon_hero.jpg';
 	import BassoonCard from '$lib/components/cards/bassoonCard.svelte';
+	import ReedCard from '$lib/components/cards/reedCard.svelte';
 	import BassoonStore from '../stores/BassoonStore';
+	import ReedStore from '../stores/ReedStore';
 
 	let bassoons: {
 		id: string;
@@ -10,10 +11,26 @@
 		image: string;
 		price: string;
 		description: string;
+		features: string[];
+	}[];
+
+	let reeds: {
+		id: number;
+		name: string;
+		price: string;
+		image: string;
+		description: string;
+		quantity: number;
+		likes: number;
+		shipping: string;
 	}[];
 
 	BassoonStore.subscribe((data) => {
 		bassoons = data;
+	});
+
+	ReedStore.subscribe((data) => {
+		reeds = data;
 	});
 </script>
 
@@ -26,14 +43,19 @@
 	<link rel="icon" type="image/png" href="/favicon.png" />
 </svelte:head>
 
-<section class="h-112 lg:h-screen">
+<section class="py-11 lg:py-0 h-112 lg:h-screen">
 	<div class="flex flex-col items-center justify-center h-full">
 		<div
 			class="flex flex-col lg:flex-row items-center justify-center md:justify-between w-11/12 mx-auto"
 		>
 			<div class="flex flex-col items-center justify-center w-full lg:w-1/2 lg:mr-11">
 				<h2 class="text-5xl font-bold text-center ">Texas Bassoon Center</h2>
-				<p class="text-xl text-center">Bassoon specialists located in Dallas, Texas.</p>
+				<p class="text-xl my-4 text-center">Bassoon specialists located in Dallas, Texas.</p>
+				<p class="text-md text-gray-500 mt-4 text-center">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ipsa ratione id laudantium
+					reprehenderit suscipit voluptatum aut? Sint provident recusandae iure facere eius nesciunt
+					blanditiis adipisci perspiciatis? Recusandae, sunt minus.
+				</p>
 				<div class="flex flex-col lg:flex-row items-center justify-center mt-8 w-full">
 					<a
 						href="#bassoons"
@@ -63,19 +85,22 @@
 	</div>
 </section>
 
-<section id="reeds" class="h-full">
+<section id="reeds" class="my-20 h-full">
+	<h2 class="text-6xl my-4 font-bold text-center">Reeds</h2>
 	<div class="flex flex-col lg:flex-row items-center justify-center">
-		<h2 class="text-6xl font-bold text-center">Reeds</h2>
+		{#each reeds as reed}
+			<ReedCard {reed} />
+		{/each}
 	</div>
 </section>
 
-<section id="about" class="h-full">
+<section id="about" class="my-20 h-full">
 	<div class="flex flex-col lg:flex-row items-center justify-center ">
 		<h2 class="text-6xl font-bold text-center">About</h2>
 	</div>
 </section>
 
-<section id="contact" class="h-full">
+<section id="contact" class="mt-20 h-full">
 	<div class="flex flex-col lg:flex-row items-center justify-center">
 		<h2 class="text-6xl font-bold text-center">Contact</h2>
 	</div>

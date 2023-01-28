@@ -7,7 +7,7 @@
 	}
 </script>
 
-<nav class=" bg-primary p-8 mx-auto md:flex md:justify-between md:items-center sticky top-0 z-50">
+<nav class=" bg-primary p-11 mx-auto md:flex md:justify-between md:items-center sticky top-0 z-50">
 	<div class="flex items-center justify-between">
 		<a class="text-xl font-bold text-white lg:text-3xl  " href="/">Texas Bassoon Center </a>
 		<!-- Mobile menu button -->
