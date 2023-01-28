@@ -1,4 +1,6 @@
-<nav class="bg-primary">
+<!-- make the navbar sticky -->
+
+<nav class="bg-primary sticky top-0 z-50">
 	<div class="container mx-auto px-6 py-4 flex items-center justify-between">
 		<a href="/" class="text-white text-xl">Texas Bassoon Center</a>
 		<div class="block lg:hidden">
@@ -10,10 +12,10 @@
 			</button>
 		</div>
 		<div class="hidden lg:block">
-			<a href="#bassoons" class="text-white mr-4">Bassoons</a>
-			<a href="#reeds" class="text-white mr-4">Reeds</a>
-			<a href="#about" class="text-white mr-4">About</a>
-			<a href="#contact" class="text-white ">Contact</a>
+			<a href="/#bassoons" class="text-white mr-4">Bassoons</a>
+			<a href="/#reeds" class="text-white mr-4">Reeds</a>
+			<a href="/#about" class="text-white mr-4">About</a>
+			<a href="/#contact" class="text-white ">Contact</a>
 		</div>
 	</div>
 </nav>
