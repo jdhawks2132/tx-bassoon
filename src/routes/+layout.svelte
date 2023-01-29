@@ -7,7 +7,7 @@
 </script>
 
 <Navbar />
-<main class="relative bg-background px-11">
+<main class="relative bg-background px-2 lg:px-11">
 	<Transition url={$page.url}>
 		<slot />
 	</Transition>
