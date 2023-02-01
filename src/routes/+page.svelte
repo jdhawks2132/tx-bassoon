@@ -5,6 +5,13 @@
 	import BassoonStore from '../stores/BassoonStore';
 	import ReedStore from '../stores/ReedStore';
 	import HeadShot from '$lib/assets/images/headshot.jpg';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+
+	$: ({ instruments } = data);
+
+	console.log(instruments);
 
 	let bassoons: {
 		id: string;
